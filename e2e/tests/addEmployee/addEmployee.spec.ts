@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { Env } from "../../frameworkConfig/env";
+import { Env } from "@e2e/frameworkConfig/env";
 
 test("Add Employee", async ({ page }) => {
   await page.goto(Env.BASE_URL);
