@@ -1,7 +1,6 @@
 import { defineConfig, devices } from "@playwright/test";
 import { config } from "dotenv";
 
-//staging ==> .env.staging
 if (process.env.ENVIRONMENT) {
   console.log("ENVIRONMENT: ", process.env.ENVIRONMENT);
   config({
@@ -20,7 +19,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: "html",
   use: {
-    trace: "on-first-retry",
+    trace: "on",
   },
 
   projects: [
