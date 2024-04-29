@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test --headed",
+    "test:chrome": "npx playwright test --headed --project=chromium",
+    "test:webkit": "npx playwright test --headed --project=webkit",
+    "test:api": "npx playwright test --project=api",
     "test:headless": "npx playwright test",
     "lint": "npx eslint .",
     "lint:fix": "npx eslint . --fix",
